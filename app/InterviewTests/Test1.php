@@ -7,10 +7,11 @@ use App\Models\Employee;
 
 class Test1 extends Test
 {
-    public $description = "Find the name of the employee from the employees table who is receiving the second highest salary";
+    public $description = "return the name of the employee from the employees table who is receiving the second highest salary";
 
-    // * employee name value should be return by run method
-    public function run()
+    // * example: return value "john"
+
+    public function run():string
     {
         // * write your code here *
 

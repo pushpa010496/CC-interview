@@ -1,16 +1,21 @@
 <?php
 
-namespace App\Modules;
+namespace App\InterviewTests;
 
+use App\Modules\Test;
+use App\Models\Department;
+use Illuminate\Database\Eloquent\Collection;
 
 class Test10 extends Test
 {
+    public $description = "Find the order with height selling price";
 
-    public $description = "";
-    public $expectedOutput = "";
-
-    public function run()
+    public function run(): Order
     {
         // * write your code here *
+
+        // ---------------
+
+        // * Run your code by " php artisan run:test Test10 "
     }
 }

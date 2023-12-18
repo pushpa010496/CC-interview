@@ -7,9 +7,10 @@ use App\Models\Department;
 
 class Test2 extends Test
 {
-    public $description = "Find the name of the department where have highest employee";
+    public $description = "return the department name from the departments table that has the most no of employees";
 
-    // * department name should be return by run method
+    // * example: return value "Data Science and Analytics"
+
     public function run(): string
     {
         // * write your code here *

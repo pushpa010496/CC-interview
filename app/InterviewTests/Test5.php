@@ -8,15 +8,14 @@ use Illuminate\Database\Eloquent\Collection;
 
 class Test5 extends Test
 {
-    public $description = "return Department Collection by descending order of employees count";
+    public $description = "Retrieve the Department Collection sorted in descending order based on the number of employees.";
 
-    // * department name should be return by run method
     public function run(): Collection
     {
         // * write your code here *
 
         // ---------------
 
-        // * Run your code by " php artisan run:test Test2 "
+        // * Run your code by " php artisan run:test Test5 "
     }
 }

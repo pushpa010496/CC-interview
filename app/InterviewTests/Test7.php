@@ -1,17 +1,21 @@
 <?php
 
-namespace App\Modules;
+namespace App\InterviewTests;
 
+use App\Modules\Test;
+use App\Models\Department;
+use Illuminate\Database\Eloquent\Collection;
 
 class Test7 extends Test
 {
+    public $description = "return those orders with Order collection where order details are more than two";
 
-    public $description = "";
-    public $expectedOutput = "";
-
-    public function run()
+    public function run(): Collection
     {
-          // * write your code here *
-          
+        // * write your code here *
+
+        // ---------------
+
+        // * Run your code by " php artisan run:test Test7 "
     }
 }
