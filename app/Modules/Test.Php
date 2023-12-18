@@ -2,6 +2,7 @@
 
 namespace App\Modules;
 
+use Illuminate\Support\Benchmark;
 
 abstract class Test
 {
@@ -15,9 +16,10 @@ abstract class Test
     public function observe(callable $callBack)
     {
         try {
-            $callBack();
+            $measure = Benchmark::value($callBack);
+            dump("Output : $measure[0]", "Query Execution Time : $measure[1] ms");
         } catch (\Throwable $th) {
-            //throw $th;
+            throw $th;
         }
     }
 
