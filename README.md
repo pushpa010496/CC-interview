@@ -7,7 +7,8 @@
 - ```php artisan db:seed ```
 
 ## Test Completion Process
- - Create a new branch (branch name should be your full name)
- - Go to <u>App\InterviewTest</u> directory
- - Complete all Ten Tests
- - Push your code
+
+- Create a new branch with your full name.
+- Navigate to the `App\InterviewTest` directory.
+- Complete all ten tests.
+- Push your code.
