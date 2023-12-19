@@ -16,4 +16,8 @@ class Customer extends Model
         'phone_number',
         'address'
     ];
+
+    public function Orders(){
+        return $this->hasMany(Order::class);
+    }
 }

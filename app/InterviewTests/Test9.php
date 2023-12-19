@@ -17,5 +17,7 @@ class Test9 extends Test
         // ---------------
 
         // * Run your code by " php artisan run:test Test9 "
+
+       return Order::where('status', 'DRAFT')->delete();
     }
 }

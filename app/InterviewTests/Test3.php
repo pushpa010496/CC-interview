@@ -18,5 +18,9 @@ class Test3 extends Test
         // ---------------
 
         // * Run your code by " php artisan run:test Test3 "
+       return DB::table('employees')
+        ->select('name')
+        ->whereBetween('join_date', ['2020-01-01', '2023-12-31'])
+        ->get();
     }
 }

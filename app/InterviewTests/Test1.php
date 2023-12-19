@@ -18,5 +18,13 @@ class Test1 extends Test
         // ---------------
 
         // * Run your code by " php artisan run:test Test1 "
+        
+        return DB::table('employees')
+        ->select('name')
+        ->orderByDesc('salary')
+        ->skip(1) 
+        ->take(1) 
+        ->get();
+    
     }
 }

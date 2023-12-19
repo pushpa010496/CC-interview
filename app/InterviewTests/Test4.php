@@ -18,5 +18,8 @@ class Test4 extends Test
         // ---------------
 
         // * Run your code by " php artisan run:test Test4 "
+
+        
+        return Employee::where('name', 'like', 'a%')->get();
     }
 }

@@ -13,9 +13,9 @@ class Test10 extends Test
     public function run(): Order
     {
         // * write your code here *
-
         // ---------------
 
         // * Run your code by " php artisan run:test Test10 "
+        return Order::orderBy('selling_price', 'desc')->first();
     }
 }

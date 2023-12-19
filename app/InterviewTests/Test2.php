@@ -18,5 +18,14 @@ class Test2 extends Test
         // ---------------
 
         // * Run your code by " php artisan run:test Test2 "
+        return DB::table('departments')
+        ->join('employees', 'departments.id', '=', 'employees.department_id')
+        ->select('departments.name', DB::raw('COUNT(employees.id) as employee_count'))
+        ->groupBy('departments.id', 'departments.name')
+        ->orderByDesc('employee_count')
+        ->first();
+
     }
 }
+
+

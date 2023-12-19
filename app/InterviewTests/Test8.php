@@ -17,5 +17,9 @@ class Test8 extends Test
         // ---------------
 
         // * Run your code by " php artisan run:test Test8 "
-    }
+        
+        return Order::where('customer_id', 5)
+        ->whereYear('created_at', 2022)
+        ->sum('amount');
+ }
 }

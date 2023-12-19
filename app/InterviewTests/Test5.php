@@ -17,5 +17,10 @@ class Test5 extends Test
         // ---------------
 
         // * Run your code by " php artisan run:test Test5 "
+
+      return Department::withCount('employees')
+            ->orderByDesc('employees_count')
+            ->get();
+
     }
 }

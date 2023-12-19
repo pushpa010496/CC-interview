@@ -17,5 +17,6 @@ class Test7 extends Test
         // ---------------
 
         // * Run your code by " php artisan run:test Test7 "
+        return Order::has('orderDetails', '>', 2)->get();
     }
 }

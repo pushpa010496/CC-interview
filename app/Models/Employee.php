@@ -16,4 +16,8 @@ class Employee extends Model
         'joining_date',
         'department_id'
     ];
+
+    public function department(){
+        return $this->hasOne(Department::class);
+    }
 }
