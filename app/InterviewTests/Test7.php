@@ -4,6 +4,7 @@ namespace App\InterviewTests;
 
 use App\Modules\Test;
 use App\Models\Department;
+use App\Models\Order;
 use Illuminate\Database\Eloquent\Collection;
 
 class Test7 extends Test

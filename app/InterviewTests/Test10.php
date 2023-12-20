@@ -4,6 +4,7 @@ namespace App\InterviewTests;
 
 use App\Modules\Test;
 use App\Models\Department;
+use App\Models\Order;
 use Illuminate\Database\Eloquent\Collection;
 
 class Test10 extends Test
@@ -16,6 +17,6 @@ class Test10 extends Test
         // ---------------
 
         // * Run your code by " php artisan run:test Test10 "
-        return Order::orderBy('selling_price', 'desc')->first();
+        return Order::orderBy('total_selling_price', 'desc')->first();
     }
 }

@@ -3,7 +3,7 @@
 namespace App\InterviewTests;
 
 use App\Modules\Test;
-use App\Models\Department;
+use DB;
 
 class Test2 extends Test
 {

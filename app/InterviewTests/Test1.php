@@ -3,7 +3,7 @@
 namespace App\InterviewTests;
 
 use App\Modules\Test;
-use App\Models\Employee;
+use DB;
 
 class Test1 extends Test
 {
@@ -21,7 +21,7 @@ class Test1 extends Test
         
         return DB::table('employees')
         ->select('name')
-        ->orderByDesc('salary')
+        ->orderByDesc('salary_per_annum')
         ->skip(1) 
         ->take(1) 
         ->get();

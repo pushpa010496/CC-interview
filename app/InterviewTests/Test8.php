@@ -4,6 +4,7 @@ namespace App\InterviewTests;
 
 use App\Modules\Test;
 use App\Models\Department;
+use App\Models\Order;
 use Illuminate\Database\Eloquent\Collection;
 
 class Test8 extends Test
@@ -20,6 +21,6 @@ class Test8 extends Test
         
         return Order::where('customer_id', 5)
         ->whereYear('created_at', 2022)
-        ->sum('amount');
+        ->sum('total_selling_price');
  }
 }

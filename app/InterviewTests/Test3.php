@@ -3,7 +3,7 @@
 namespace App\InterviewTests;
 
 use App\Modules\Test;
-use App\Models\Employee;
+use DB;
 
 class Test3 extends Test
 {
@@ -20,7 +20,7 @@ class Test3 extends Test
         // * Run your code by " php artisan run:test Test3 "
        return DB::table('employees')
         ->select('name')
-        ->whereBetween('join_date', ['2020-01-01', '2023-12-31'])
+        ->whereBetween('joining_date', ['2020-01-01', '2023-12-31'])
         ->get();
     }
 }

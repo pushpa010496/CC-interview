@@ -3,6 +3,7 @@
 namespace App\InterviewTests;
 
 use App\Modules\Test;
+use App\Models\Order;
 use App\Models\Department;
 use Illuminate\Database\Eloquent\Collection;
 
